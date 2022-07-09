@@ -31,7 +31,7 @@ async createUser(req,res){
     
         if(User.affectedRows>0)
         {
-          // console.log(User);
+          console.log(User);
           res.send({
             message: "Your account has been created successfully."
           });
