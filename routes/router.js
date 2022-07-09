@@ -8,7 +8,7 @@ var UserController=require('../controller/userController')
 router.post('/createUser',UserController.createUser);
 
 //userlogin
-router.get('/loginUser',UserController.loginUser);
+router.post('/loginUser',UserController.loginUser);
 
 // Get All User
 
