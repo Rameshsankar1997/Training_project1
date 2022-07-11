@@ -12,7 +12,7 @@ router.post('/loginUser',UserController.loginUser);
 
 // Get All User
 
-router.get('/getAll',UserController.getAllUser);
+router.get('/getallUser',UserController.getAllUser);
 
 // Get User
 
@@ -21,5 +21,9 @@ router.get('/getUser/:id',UserController.getUser);
 // Update User
 
 router.put('/updateUser/:id',UserController.updateUser);
+
+// Update User
+
+router.delete('/deleteUser/:id',UserController.deleteUser);
 
 module.exports = router;

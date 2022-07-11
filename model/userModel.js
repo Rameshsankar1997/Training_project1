@@ -19,19 +19,24 @@ const UserModel = {
         return query = await database.promise().query(`select * from tbl_signup u where u.email = '${data.email}' and u.password = '${data.password}'`);
     },
 
-async GetAllUser(){
-    return query = await database.promise().query(`select * from users`);
-},
-async getUser(data){
+    async GetAllUser(){
+        return query = await database.promise().query(`select * from tbl_signup`);
+    },
+    async getUser(data){
 
-    return query = await database.promise().query(`select * from users u where u.user_id = ${data.user_id}`);
+        return query = await database.promise().query(`select * from tbl_signup u where u.signup_id = ${data.signup_id}`);
 
-},
-async updateUser(data){
+    },
+    async updateUser(data){
 
-    return query = await database.promise().query(`update users set user_name = '${data.user_name}' where user_id = ${data.user_id}`);
+        return query = await database.promise().query(`update tbl_signup set username = '${data.username}',phonenumber = '${data.phonenumber}',email = '${data.email}',address = '${data.address}',gender = '${data.gender}',bloodgroup = '${data.bloodgroup}',alternative_phone_no = '${data.alternative_phone_no}',DOB = '${data.DOB}',qualification = '${data.qualification}' where signup_id = ${data.signup_id}`);
 
-}
+    },
+    async deleteUser(data){
+
+        return query = await database.promise().query(`delete from tbl_signup u where u.signup_id = ${data.signup_id}`);
+
+    },
 }
 
 module.exports=UserModel;
