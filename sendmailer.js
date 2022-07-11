@@ -10,7 +10,7 @@ var transport = sendmailer.createTransport({
         pass : 'yxyuxaxuozyvdboz'
     }
 });
-console.log("Mailer");
+
 
 // var composemail = {
 //     from : 'rameshsankar.s@skeintech.com',
