@@ -296,3 +296,4 @@
 20220709	16:49:23	848fc8ac-73d9-4097-93b2-c86abad047b7	POST	undefined	/crud/createUser
 20220709	20:43:12	04603c17-53ee-4374-8746-d80eaf22e86a	POST	undefined	/crud/loginUser
 20220709	20:59:13	cbba0473-5a99-497a-8a9f-eb8839346590	POST	undefined	/crud/loginUser
+20220709	21:06:56	535fd299-b9ad-4c59-93aa-a3fcdbacfdd6	GET	undefined	/crud/loginUser

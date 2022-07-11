@@ -10,18 +10,15 @@ const PORT = process.env.PORT || 3500;
 app.use(logger);
 
 // Cross Origin Resource Sharing
-const whitelist = ['https://www.yoursite.com', 'http://127.0.0.1:5500', 'http://localhost:3500'];
-const corsOptions = {
-    origin: (origin, callback) => {
-        if (whitelist.indexOf(origin) !== -1 || !origin) {
-            callback(null, true)
-        } else {
-            callback(new Error('Not allowed by CORS'));
-        }
-    },
-    optionsSuccessStatus: 200
-}
-app.use(cors(corsOptions));
+app.use(cors());
+app.use((req,res,next)=>{
+    res.header('Access-Control-Allow-Headers, *, Access-Control-Allow-Origin', 'Origin, X-Requested-with, Content_Type,Accept,Authorization','http://43.204.221.33:8080');
+    if(req.method === 'OPTIONS') {
+        res.header('Access-Control-Allow-Methods','PUT,POST,PATCH,DELETE,GET');
+        return res.status(200).json({});
+    }
+    next();
+});
 
 // built-in middleware to handle urlencoded data
 // in other words, form data:  
