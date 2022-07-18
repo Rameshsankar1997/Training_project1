@@ -117,13 +117,15 @@ const userController={
           console.log(token)
           res.send({
             message: "Logged in successfully.",
+            status :true,
             data : userAlldata,
             token : token
           });
         }
         else{
           res.send({
-            message: "Email / Password is incorrect."
+            message: "Email / Password is incorrect.",
+            status :false
           });
         }
     
