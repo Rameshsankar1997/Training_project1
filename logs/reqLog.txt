@@ -374,3 +374,7 @@
 20220711	18:44:13	ff9beb59-7063-407e-8463-7adbf04caafd	PUT	undefined	/crud/updateUser/4
 20220711	18:44:17	7f36d05b-fad5-49e2-88c4-ee9498fcbe6d	GET	undefined	/crud/getallUser
 20220711	18:44:31	a4680a33-dbde-4a1d-93d8-b23a794d6023	DELETE	undefined	/crud/deleteUser/4
+20220725	17:26:45	06eeb796-309d-43ad-8918-455bea5fd847	PUT	undefined	/crud/updateUser/8
+20220725	17:28:10	3bb8bc2c-3184-4bf1-93ae-a6e01fe91e01	PUT	undefined	/crud/updateUser/8
+20220725	17:29:11	a66a896d-44a7-4c48-a085-b23889ea85ce	PUT	undefined	/crud/updateUser/8
+20220725	17:29:29	90146b94-45d3-484b-aa3a-dd442901c6cf	PUT	undefined	/crud/updateUser/8

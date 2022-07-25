@@ -29,7 +29,7 @@ const UserModel = {
     },
     async updateUser(data){
 
-        return query = await database.promise().query(`update tbl_signup set username = '${data.username}',phonenumber = '${data.phonenumber}',email = '${data.email}',address = '${data.address}',gender = '${data.gender}',bloodgroup = '${data.bloodgroup}',alternative_phone_no = '${data.alternative_phone_no}',DOB = '${data.DOB}',qualification = '${data.qualification}' where signup_id = ${data.signup_id}`);
+        return query = await database.promise().query(`update tbl_signup set username = '${data.username}',phonenumber = '${data.phonenumber}',email = '${data.email}',address = '${data.address}',gender = '${data.gender}',bloodgroup = '${data.bloodgroup}',alternative_phone_no = '${data.alternative_phone_no}',DOB = '${data.dob}',qualification = '${data.qualification}' where signup_id = ${data.signup_id}`);
 
     },
     async deleteUser(data){

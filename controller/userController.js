@@ -190,7 +190,7 @@ const userController={
       "gender"              : req.body.gender,
       "bloodgroup"          : req.body.bloodgroup,
       "alternative_phone_no": req.body.alternative_phone_no,
-      "DOB"                 : req.body.DOB,
+      "dob"                 : req.body.dob,
       "qualification"       : req.body.qualification
     };
 
