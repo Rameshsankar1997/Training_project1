@@ -155,7 +155,11 @@ const userController={
     let getAllUser = await UserModal.GetAllUser();
     
     if(getAllUser[0].length){
-      res.send(getAllUser[0]);
+      res.send({
+        message: "All user data is fetching successfully.",
+        status : true,
+        data : getAllUser[0]
+      });
     }
     else{
       console.log("Error");
